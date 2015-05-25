@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E9043C91B13C51C00DA4D9C /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9043C81B13C51C00DA4D9C /* Balloon.swift */; };
 		FEF4C2C81B1391A8008B71EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4C2C71B1391A8008B71EC /* AppDelegate.swift */; };
 		FEF4C2CA1B1391A8008B71EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4C2C91B1391A8008B71EC /* ViewController.swift */; };
 		FEF4C2CD1B1391A8008B71EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF4C2CB1B1391A8008B71EC /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E9043C81B13C51C00DA4D9C /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
 		FEF4C2C21B1391A8008B71EC /* 99RedBalloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99RedBalloons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4C2C61B1391A8008B71EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF4C2C71B1391A8008B71EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				FEF4C2C71B1391A8008B71EC /* AppDelegate.swift */,
 				FEF4C2C91B1391A8008B71EC /* ViewController.swift */,
 				FEF4C2CB1B1391A8008B71EC /* Main.storyboard */,
+				5E9043C81B13C51C00DA4D9C /* Balloon.swift */,
 				FEF4C2CE1B1391A8008B71EC /* Images.xcassets */,
 				FEF4C2D01B1391A8008B71EC /* LaunchScreen.xib */,
 				FEF4C2C51B1391A8008B71EC /* Supporting Files */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF4C2CA1B1391A8008B71EC /* ViewController.swift in Sources */,
+				5E9043C91B13C51C00DA4D9C /* Balloon.swift in Sources */,
 				FEF4C2C81B1391A8008B71EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +443,7 @@
 				FEF4C2E31B1391A8008B71EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEF4C2E41B1391A8008B71EC /* Build configuration list for PBXNativeTarget "99RedBalloonsTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +452,7 @@
 				FEF4C2E61B1391A8008B71EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
