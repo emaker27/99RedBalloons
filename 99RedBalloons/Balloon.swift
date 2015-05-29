@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 struct Balloons {
-    var balloon: [UIImage]! = []
     
-    mutating func createBalloons() {
+    func createBalloons() -> [String] {
+        var balloon: [String]! = []
         var randomNumber: Int
         var imageToUse: String
         
@@ -30,7 +30,9 @@ struct Balloons {
                 imageToUse = "RedBalloon4.jpg"
             }
             
-            balloon.append(UIImage(named: imageToUse)!)
+            balloon.append(imageToUse)
         }
+        
+        return balloon
     }
 }
