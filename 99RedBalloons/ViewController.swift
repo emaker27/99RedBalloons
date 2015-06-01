@@ -14,15 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
-    var balloons: [String] = []
+    var balloons: [Balloons] = []
     var randomInt = 0
-    var imageUsed = ""
+    var imageUsed = UIImage(named: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.balloons = Balloons().createBalloons()
+        
         
     }
 
@@ -42,7 +43,7 @@ class ViewController: UIViewController {
         
         self.numberOfBalloonsTextLabel.text = "\(randomInt)" + " balloons!"
         
-        self.backgroundImage.image = UIImage(named: self.balloons[self.randomInt])
+        self.backgroundImage.image = self.balloons[self.randomInt]
         println(self.balloons[self.randomInt])
         
     }
