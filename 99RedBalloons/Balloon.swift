@@ -12,7 +12,7 @@ import UIKit
 struct Balloons {
     var number = 0
     var imageToUse = UIImage(named: "")
-}
+
 
 func createBalloons() -> [Balloons] {
         var balloons: [Balloons] = []
@@ -39,3 +39,4 @@ func createBalloons() -> [Balloons] {
         
         return balloons
     }
+}
