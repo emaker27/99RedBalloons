@@ -14,14 +14,14 @@ struct Balloons {
     var imageToUse = UIImage(named: "")
 
 
-func createBalloons() -> [Balloons] {
+    func createBalloons() -> [Balloons] {
         var balloons: [Balloons] = []
         var number = 0
         var imageToUse = UIImage(named: "")
         var balloon = Balloons()
         
         for var i = 0; i < 100; i++ {
-            let randomNumber = Int(arc4random_uniform(UInt32(5)))
+            let randomNumber = Int(arc4random_uniform(UInt32(4)))
             balloon.number = i
             switch randomNumber {
             case 0:
@@ -30,12 +30,16 @@ func createBalloons() -> [Balloons] {
                 balloon.imageToUse = UIImage(named: "RedBalloon2.jpg")
             case 2:
                 balloon.imageToUse = UIImage(named: "RedBalloon3.jpg")
-            default:
+            case 3:
                 balloon.imageToUse = UIImage(named: "RedBalloon4.jpg")
+            default:
+                balloon.imageToUse = UIImage(named: "BerlinTVTower.jpg")
             }
             
             balloons.append(balloon)
         }
+    
+        println("The balloon array has this many items: " + "\(balloons.count)")
         
         return balloons
     }

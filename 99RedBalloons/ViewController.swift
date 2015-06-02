@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     
     var balloons:[Balloons] = []
-    var randomInt = 0
+    var currentIndex = 0
     var imageUsed = UIImage(named: "")
     
     override func viewDidLoad() {
@@ -32,19 +32,17 @@ class ViewController: UIViewController {
 
     @IBAction func NextBalloonButton(sender: UIBarButtonItem) {
         self.numberOfBalloonsTextLabel.hidden = false
-        var randomNum = 0
-        do {
-            randomNum = Int(arc4random_uniform(UInt32(100)))
-        } while (randomNum == self.randomInt || imageUsed == self.balloons[randomNum].imageToUse)
-        self.randomInt = randomNum
-        self.imageUsed = self.balloons[self.randomInt].imageToUse
-            
-        self.numberOfBalloonsTextLabel.text = "\(self.balloons[self.randomInt].number)" + " balloons!"
-        
-        self.backgroundImage.image = self.balloons[self.randomInt].imageToUse
-        println(self.balloons[self.randomInt].number)
-        
+        balloonLogic()
     }
-
+    
+    func balloonLogic() {
+        self.numberOfBalloonsTextLabel.text = "\(self.balloons[self.currentIndex].number + 1)" + " balloons!"
+        self.currentIndex += 1
+        self.backgroundImage.image = self.balloons[self.currentIndex].imageToUse
+        
+        if self.currentIndex == 99 {
+            self.currentIndex = 0
+        }
+    }
 }
 
